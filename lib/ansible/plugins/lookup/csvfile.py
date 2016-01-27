@@ -28,7 +28,7 @@ class LookupModule(LookupBase):
     def read_csv(self, filename, key, delimiter, dflt=None, col=1):
 
         try:
-            f = codecs.open(filename, 'r', encoding='utf-8')
+            f = open(filename, 'r')
             creader = csv.reader(f, delimiter=str(delimiter))
 
             for row in creader:
