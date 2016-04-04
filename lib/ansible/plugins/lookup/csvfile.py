@@ -17,7 +17,6 @@
 from __future__ import (absolute_import, division, print_function)
 __metaclass__ = type
 
-import codecs
 import csv
 
 from ansible.errors import AnsibleError
